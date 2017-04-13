@@ -17,6 +17,9 @@ class SnippetsController < ApplicationController
     else
       render 'new'
     end
+  end
 
+  def show
+    @snippet = Snippet.find(params[:id])
   end
 end
